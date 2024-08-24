@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+body {
+    font-family: 'Source Code Pro';
+    
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    margin-top: 2rem;
+    display: flex;
+    row-gap: 2.6rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: lemonchiffon; */
+}
+
+.dice {
+    font-size: 4.4rem;
+    border: none;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.roll-animation {
+    animation-name: roll;
+}
+
+@keyframes roll {
+    0%{
+        transform: rotateY(0deg) rotateX(0deg);
+    }
+    100%{
+        transform: rotateY(720deg) rotateX(720deg);
+    }
+}
+
+
+
+#roll-button {
+    padding: 10px;
+    /* border: 1px solid grey; */
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: rgb(220, 100, 236);
+    color: white;
+}
+#roll-button:active {
+    background-color: rgb(183, 85, 178);
+    color: white;
+}
+
+#roll-list {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    flex-direction: column;
+    list-style: none;
+}
+ .list-item {
+    width: 50vmin;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    padding: 10px;
+    border-radius: 7px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 0px 1px grey;
+  
+}
+.roll {
+    font-size: 2rem;
+}
